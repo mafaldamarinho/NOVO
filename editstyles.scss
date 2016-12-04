@@ -1,0 +1,60 @@
+@import "reset.scss";
+@font-face {
+  font-family: myfont;
+  src: url(FuturaExtended.ttf);
+}
+
+/*@font-face {
+  font-family: myfontexto;
+  scr: url(HELVETICA.otf);
+}*/
+
+@font-face {
+  font-family: myfontlt;
+  src: url(futura-normal.ttf);
+}
+section{
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 100px;
+  margin-left:100px;
+}
+h3{
+  font-family: "myfontlt",arial,sans-serif;
+  text-transform: uppercase;
+  font-size: 60pt;
+  font-weight: bold;
+  color:rgb(0, 0, 0);
+}
+#projetos{
+  z-index: 1;
+  padding:0px;
+  margin: 0%;
+  margin-top: 100px;
+  display: block;
+}
+#projetos {
+  margin:0;
+  font-family: "myfontlt",arial,sans-serif;
+  text-transform: uppercase;
+  width: 45%;/*tamanho das imagens*/
+}
+#projetosdois{
+
+}
+figure {
+  //position: relative;
+  margin:-3px;/*imagens todas juntas*/
+}
+.ficçoes {
+  width: 100%;
+}
+.cookbook{
+  width: 100%;
+}
+.bombarda{
+  width: 100%;
+}
+.haxe{
+  width: 242%;
+}

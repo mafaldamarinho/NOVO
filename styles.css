@@ -1,23 +1,71 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none;
+}
+
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
 @font-face {
   font-family: myfont;
-  src: url(HELVET1.ttf);
+  src: url(FuturaExtended.ttf);
 }
 
-@font-face {
+/*@font-face {
   font-family: myfontexto;
   scr: url(HELVETICA.otf);
-}
-
+}*/
 @font-face {
   font-family: myfontlt;
-  src: url(HelveticaNeueLTStdLt.otf);
+  src: url(futura-normal.ttf);
+}
+
+body {
+  margin: 0 0%;
 }
 
 header {
-  background-color: #FFF;
-  opacity: 0.1;
-  position: fixed;
-  top: 0;
+  background-color: white;
+  opacity: 0.5;
+  /*position: fixed;
+  top: 0;*/
   width: 100%;
   height: 50px;
 }
@@ -29,74 +77,281 @@ header .indice {
 }
 
 .indice {
-  font-family: "myfontlt",arial,sans-serif;
+  font-family: "myfont",arial,sans-serif;
+  font-weight: bold;
   font-size: 12pt;
-  color: #000100;
+  color: #000;
   margin-top: 0px;
   word-spacing: 40px;
+  z-index: 2;
 }
 
 .indice li {
   display: inline;
 }
 
+a.link {
+  color: #0021ff;
+}
+
 a:visited {
-  color: #000100;
+  color: #0021ff;
 }
 
 a:hover {
-  color: #acacac;
-}
-
-a:active {
-  color: black;
+  color: rgba(0, 0, 0, 0.57);
 }
 
 h1 {
   color: #000;
-  font-family: "myfont",arial,sans-serif;
+  font-family: "myfontlt",arial,sans-serif;
   font-weight: bold;
   font-size: 50pt;
   text-transform: uppercase;
-  padding-top: 220px;
+  padding-top: 100px;
   text-align: center;
 }
 
 h2 {
   font-family: "myfontlt",arial,sans-serif;
-  color: lightgrey;
+  color: rgba(0, 0, 0, 0.57);
   font-size: 20pt;
   text-align: center;
-  margin-top: -40px;
+  margin-top: 0px;
+  padding-bottom: 40px;
 }
 
 .inicio {
-  background-color: #daecff;
   padding-top: 50px;
   padding-bottom: 170px;
 }
 
-img {
-  display: block;
-  flex-direction: column;
-  margin: auto;
-  width: 40%;
-  padding-top: 10px;
+.primeiro {
+  background-color: white;
+  margin: 0%;
+  padding-bottom: 0px;
+  height: 548px;
+  display: flex;
+  justify-content: space-between;
 }
 
-.aboutme {
-  padding-bottom: 20px;
+.foto {
+  margin: 0 0%;
+  width: 548px;
+  height: 548px;
+}
+
+.topicos {
+  position: relative;
+  top: 0px;
+  left: 50px;
+  font-family: "myfontlt",arial,sans-serif;
+  font-weight: bold;
+  font-size: 30pt;
+  text-transform: none;
+  padding-top: 50px;
 }
 
 .texto {
   /*texto aboutme*/
-  font-family: "myfontexto",arial,sans-serif;
-  position: relative;
-  top: 0px;
-  left: 100px;
+  font-family: "myfontlt",arial,sans-serif;
+  font-weight: bold;
+  font-size: 15pt;
+  color: rgba(0, 0, 0, 0.53);
+  padding-top: 170px;
+  padding-right: 150px;
 }
 
-p {
-  text-align: justify;
-  margin: 20%;
+.segundo {
+  text-align: center;
+  padding-top: 0px;
+}
+
+.grupoelementos {
+  z-index: 1;
+  padding: 0px;
+  margin: 0px;
+}
+
+.grupoelementos li {
+  font-family: "myfontlt",arial,sans-serif;
+  text-transform: uppercase;
+  width: 49%;
+  /*tamanho das imagens*/
+  display: inline-block;
+}
+
+.grupoelementos ul {
+  padding: 0px;
+}
+
+.grupoelementos img {
+  /*margin-left:-18px;/*..........alinhado :(..........*/
+  width: 100%;
+  padding: 0px;
+  /*........imagens juntas em cima*/
+  margin: 0px;
+}
+
+img {
+  height: 300px;
+  /* altura das imagens.... que vao ser frases sobre uma imagem...*/
+}
+
+figure {
+  position: relative;
+  margin: -11px;
+  /*imagens todas juntas*/
+}
+
+/*figcaption {
+  display: none;
+}
+
+.terceiro {
+  margin-top: 200px;
+  margin-bottom: 180px;
+  padding-top: 100px;
+  position: relative;
+  left: 0px;
+}
+
+.terceiro p {
+  font-family: "myfontlt",arial,sans-serif;
+  display: inline;
+}
+
+.terceiro p:first-child {
+  font-size: 15pt;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+  color: #0000ff;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.terceiro p:nth-child(2) {
+  color: #000;
+  display: block;
+  position: absolute;
+  top: 30px;
+  left: 0px;
+}*/
+h3 {
+  font-family: "myfontlt",arial,sans-serif;
+  text-transform: uppercase;
+  font-size: 20pt;
+  color: #0000ff;
+  position: absolute;
+  top: 140px;
+  left: 575px;
+}
+
+.logos {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 70px;
+  margin-bottom: 60px;
+}
+
+.behance {
+  width: 50px;
+  height: 50px;
+}
+
+.email {
+  width: 50px;
+  height: 50px;
+}
+
+.pinterest {
+  width: 50px;
+  height: 50px;
+}
+
+.vimeo {
+  width: 47px;
+  height: 47px;
+}
+
+.email {
+  font-family: "myfontlt",arial,sans-serif;
+  color: white;
+  font-weight: bold;
+  font-size: 20pt;
+  background-color: #0038ff;
+  width: 1343px;
+  height: 50px;
+  padding-top: 25px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  header {
+    /*background-color: #0000ff;*/
+    padding-top: 150px;
+    padding-bottom: 320px;
+  }
+  header .indice {
+    display: none;
+  }
+  h1 {
+    font-size: 45pt;
+    margin-top: 0;
+    margin-left: -300px;
+  }
+  .texto {
+    padding-top: 0px;
+    margin-top: -160px;
+    margin-left: 54%;
+  }
+  .segundo {
+    width: 100%;
+    margin-top: -200px;
+    padding-top: 0px;
+    padding-bottom: 80px;
+  }
+  .trabalhosum li {
+    width: 30%;
+    display: inline-block;
+  }
+  .terceiro {
+    margin-top: 0;
+    margin-left: 200px;
+  }
+  .terceiro p:first-child {
+    font-size: 11pt;
+    padding-bottom: 20px;
+    position: absolute;
+    top: 0px;
+    left: 140px;
+  }
+  .terceiro p:nth-child(2) {
+    font-size: 9pt;
+    position: absolute;
+    top: 20px;
+    left: 90px;
+  }
+  h3 {
+    font-size: 12pt;
+    position: absolute;
+    top: 60px;
+    left: 120px;
+  }
+  .rsociais {
+    font-family: "myfont",arial,sans-serif;
+    font-size: 9pt;
+    word-spacing: 10px;
+    line-height: normal;
+    position: absolute;
+    top: 100px;
+    left: 80px;
+  }
+  .seta {
+    position: absolute;
+    top: 1700px;
+    left: 45%;
+    padding-bottom: 50px;
+  }
 }

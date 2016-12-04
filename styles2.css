@@ -1,0 +1,260 @@
+@font-face {
+  font-family: myfont;
+  src: url(HELVET1.ttf);
+}
+
+@font-face {
+  font-family: myfontexto;
+  scr: url(HELVETICA.otf);
+}
+
+@font-face {
+  font-family: myfontlt;
+  src: url(HelveticaNeueLTStdLt.otf);
+}
+
+header {
+  background-color: #FFF;
+  opacity: 0.5;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 50px;
+}
+
+header .indice {
+  text-align: right;
+  margin-top: 20px;
+  padding-right: 50px;
+}
+
+.indice {
+  font-family: "myfontlt",arial,sans-serif;
+  font-size: 12pt;
+  color: #000;
+  margin-top: 0px;
+  word-spacing: 40px;
+}
+
+.indice li {
+  display: inline;
+}
+
+a:visited {
+  color: #000;
+}
+
+a:hover {
+  color: #000;
+}
+
+a:active {
+  color: #000;
+}
+
+h1 {
+  color: #000;
+  font-family: "myfont",arial,sans-serif;
+  font-weight: bold;
+  font-size: 50pt;
+  text-transform: uppercase;
+  padding-top: 220px;
+  text-align: center;
+}
+
+h2 {
+  font-family: "myfontlt",arial,sans-serif;
+  color: lightgrey;
+  font-size: 20pt;
+  text-align: center;
+  margin-top: -40px;
+}
+
+.inicio {
+  background-color: #daecff;
+  padding-top: 50px;
+  padding-bottom: 170px;
+}
+
+img {
+  display: block;
+  flex-direction: column;
+  margin: auto;
+  width: 40%;
+  padding-top: 10px;
+}
+
+.texto {
+  /*texto aboutme*/
+  font-family: "myfontexto",arial,sans-serif;
+  color: #333333;
+  font-size: 12pt;
+  position: relative;
+  top: 0px;
+  left: 100px;
+}
+
+p {
+  text-align: justify;
+  margin: 20%;
+}
+
+.primeiro {
+  padding-bottom: 0px;
+}
+
+.segundo p {
+  font-family: "myfontlt",arial,sans-serif;
+  font-size: 12pt;
+  text-transform: uppercase;
+  margin-left: -970px;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  color: #0000ff;
+}
+
+.segundo {
+  margin-top: 0px;
+  height: 472px;
+  padding-top:3px;
+  text-align: center;
+}
+.grupoelementos{
+  padding:0px;
+  margin: 0px
+}
+.grupoelementos li {
+  font-family: "myfontlt",arial,sans-serif;
+  text-transform: uppercase;
+  width: 49.5%;/*tamanho das imagens*/
+  display: inline-block;
+}
+.grupoelementos ul{
+padding: 0px;
+}
+.grupoelementos img {
+  /*margin-left:-18px;/*..........alinhado :(..........*/
+  width: 100%;
+  padding:0px;/*........imagens juntas em cima*/
+  margin:0px;
+}
+img{
+  height: 300px;/* altura das imagens.... que vao ser frases sobre uma imagem...*/
+}
+figure {
+  position: relative;
+  margin:-11px;/*imagens todas juntas*/
+}
+figcaption {
+  display: none;
+}
+
+.terceiro {
+  margin-top: 200px;
+  margin-bottom: 180px;
+  padding-top: 100px;
+  position: relative;
+  left: 0px;
+}
+
+.terceiro p {
+  font-family: "myfontlt",arial,sans-serif;
+  display: inline;
+}
+
+.terceiro p:first-child {
+  font-size: 15pt;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+  color: #0000ff;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.terceiro p:nth-child(2) {
+  color: #000;
+  display: block;
+  position: absolute;
+  top: 30px;
+  left: 0px;
+}
+
+h3 {
+  font-family: "myfontlt",arial,sans-serif;
+  text-transform: uppercase;
+  font-size: 20pt;
+  color: #0000ff;
+  position: absolute;
+  top: 140px;
+  left: 575px;
+}
+
+@media (max-width: 768px) {
+  header {
+    /*background-color: #0000ff;*/
+    padding-top: 150px;
+    padding-bottom: 320px;
+  }
+  header .indice {
+    display: none;
+  }
+  h1 {
+    font-size: 45pt;
+    margin-top: 0;
+    margin-left: -300px;
+  }
+  .texto {
+    padding-top: 0px;
+    margin-top: -160px;
+    margin-left: 54%;
+  }
+  .segundo {
+    width: 100%;
+    margin-top: -200px;
+    padding-top: 0px;
+    padding-bottom: 80px;
+  }
+  .trabalhosum li {
+    width: 30%;
+    display: inline-block;
+  }
+  .terceiro {
+    margin-top: 0;
+    margin-left: 200px;
+  }
+  .terceiro p:first-child {
+    font-size: 11pt;
+    padding-bottom: 20px;
+    position: absolute;
+    top: 0px;
+    left: 140px;
+  }
+  .terceiro p:nth-child(2) {
+    font-size: 9pt;
+    position: absolute;
+    top: 20px;
+    left: 90px;
+  }
+  h3 {
+    font-size: 12pt;
+    position: absolute;
+    top: 60px;
+    left: 120px;
+  }
+  .rsociais {
+    font-family: "myfont",arial,sans-serif;
+    font-size: 9pt;
+    word-spacing: 10px;
+    line-height: normal;
+    position: absolute;
+    top: 100px;
+    left: 80px;
+  }
+  .seta {
+    position: absolute;
+    top: 1700px;
+    left: 45%;
+    padding-bottom: 50px;
+  }
+}
